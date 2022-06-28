@@ -1,9 +1,0 @@
-﻿  Source.cpp
-C:\Users\TP\Desktop\Visual Studio 2022 Version\GameOfLife\Source.cpp(101,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\TP\Desktop\Visual Studio 2022 Version\GameOfLife\Source.cpp(194,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\TP\Desktop\Visual Studio 2022 Version\GameOfLife\Source.cpp(206,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\TP\Desktop\Visual Studio 2022 Version\GameOfLife\Source.cpp(331,25): warning C4018: '<': signed/unsigned mismatch
-C:\Users\TP\Desktop\Visual Studio 2022 Version\GameOfLife\Source.cpp(339,26): warning C4018: '<': signed/unsigned mismatch
-C:\Users\TP\Desktop\Visual Studio 2022 Version\GameOfLife\Source.cpp(351,25): warning C4018: '<': signed/unsigned mismatch
-C:\Users\TP\Desktop\Visual Studio 2022 Version\GameOfLife\Source.cpp(359,26): warning C4018: '<': signed/unsigned mismatch
-  GameOfLife.vcxproj -> C:\Users\TP\Desktop\Visual Studio 2022 Version\Debug\GameOfLife.exe
