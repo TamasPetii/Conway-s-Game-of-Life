@@ -35,7 +35,7 @@ As a feature the game map is represented as a one dimensional vector instead of 
 2. In C:\SDL folder make folders named as bin, include and lib.
 3. Extract the downloaded SDL2 folders and copy their x64 include content to the C:\SDL\include folder. Do the same thing with lib and bin folders (x64!!!). (If lib and bin files are in the same directory of the extracted SDL2 packs then sort them to the proper folds. )
 4. Open a terminal and write this command: subst T: C:\SDL
-5. Open Visual Studio 2022, make a project and open project settings.
+5. Open Visual Studio 2022, make a project and open project settings (Or download my VS2022 pack and load that).
 6. Set the top bar like this.
 
 <div align="center">
