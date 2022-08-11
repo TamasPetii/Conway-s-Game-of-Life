@@ -12,32 +12,33 @@ Kis érdekességképpen egy dimenziós tömböket használtam kétdimenziós tö
 | ------------- | ------------- |
 | ![kép](https://user-images.githubusercontent.com/60004480/184091476-cd3428d9-096d-4bf9-84aa-c0f3e700c440.png)  | A gomb lenyomásával el tudod indítani a játékot. <br> Ha a játék elindult akkor a gomb azonnal szürkére vált és innentől kezdve elérhetetlen a gomb mindaddig, amíg nem lesz szüneteltetve a játék.  |
 | ![kép](https://user-images.githubusercontent.com/60004480/184091854-e7634a14-cd57-43de-aee0-4dd6885e71ac.png)| A gomb lenyomásával szüneteltetni tudod a játékot. <br> Miközben a játék szüneteltetve van a gomb szürkére vált és nem lehet rákattintani amíg el nem indul újra a játék.  |
-|![kép](https://user-images.githubusercontent.com/60004480/184092193-9dbca68d-0657-4350-87a2-5cb6f434906b.png)| Anytime you want to leave the game press this button and the program will close.|
-|![kép](https://user-images.githubusercontent.com/60004480/184092305-a6ae37a3-01b6-45db-8868-773f92d9ab84.png)|By pressing this button the option bar will be available and you can customize the game. |
-|![kép](https://user-images.githubusercontent.com/60004480/184092432-37dac152-af02-4a04-9618-25c4640d6554.png)|You can set the background colour of the map. <br> You just need to click on the chosen colour and the game immediately changes. |
-|![kép](https://user-images.githubusercontent.com/60004480/184092661-281db94b-5b09-4cad-9b39-c426e2daf797.png)|You can set the color of the living cells. <br> You just need to click on the chosen colour and the game immediately changes.|
-|![kép](https://user-images.githubusercontent.com/60004480/184092818-d2389c85-f07c-4f7b-8869-843031424a49.png)|You can set the size of the game map. <br> The current selected size is indicated by a red x. |
+|![kép](https://user-images.githubusercontent.com/60004480/184092193-9dbca68d-0657-4350-87a2-5cb6f434906b.png)| Ha végeztél a játékkal és ki akarsz lépni, akkor nyomd meg ezt a gombot és azonnal bezárul a játék.|
+|![kép](https://user-images.githubusercontent.com/60004480/184092305-a6ae37a3-01b6-45db-8868-773f92d9ab84.png)| Ha ezt a gombot megnyitod, akkor le fognak nyílni a játékbeállítási opciók, ahol testre tudod szabni tetszés szerint a játék kinézetét. |
+|![kép](https://user-images.githubusercontent.com/60004480/184092432-37dac152-af02-4a04-9618-25c4640d6554.png)| Itt beállíthatod a háttér színét. <br> Kattints rá a kiválaszott színre és a játék automatikusan frissíti magát és már az új beállítással élvezheted a játékot. |
+|![kép](https://user-images.githubusercontent.com/60004480/184092661-281db94b-5b09-4cad-9b39-c426e2daf797.png)| Az élő cellák színei is beállíthatóak itt. <br> Kattints rá a kiválaszott színre és a játék automatikusan frissíti magát és már az új beállítással élvezheted a játékot.|
+|![kép](https://user-images.githubusercontent.com/60004480/184092818-d2389c85-f07c-4f7b-8869-843031424a49.png)| Továbbá a játékpálya mérete is beállítható. <br> A jelenleg kiválasztott pályaméretet piros x-el jelöltem. |
 
-# Installation
-1. Download SDL2 pack: https://www.libsdl.org/release/SDL2-devel-2.0.22-VC.zip
-2. Download SDL2_image pack: https://www.libsdl.org/projects/SDL_image/release/SDL2_image-devel-2.0.5-VC.zip
+# Letöltés
+1. SDL2 csomag letöltése: https://www.libsdl.org/release/SDL2-devel-2.0.22-VC.zip
+2. SDL2_image csomag letöltése: https://www.libsdl.org/projects/SDL_image/release/SDL2_image-devel-2.0.5-VC.zip
 
-# Setup Visual Studio Code / Terminal Compile
-0. `The .cpp, .h, .png files are already int the main directory | SDL pack is already downloaded` <br>
-1. `Create a "src" directory in the main directory` <br>
-2. `Create a "include" directory in the src directory, and put the SDL header files there` <br>
-3. `Create a "lib" directory in the src directory, and put the following librarys there: SDL2.lib, SDLmain.lib, SDL_image.lib` <br>
-4. `Put the following dlls int the main direcotry: SDL2.dll, SDL_image.dll, libpng16-16.dll` <br>
-5. `Open a terminal in the main library and copy this command and run a.exe:`<br> 
+# Visual Studio Code / Terminálos fordítás beállítása
+0. `Az SDL csomagok már telepítve vannak. A .cpp és a .png fileok a fő mappában vannak.` <br>
+1. `Hozz létre a fő mappában egy "src" nevű mappát` <br>
+2. `Hozz létre az "src" mappán belül egy "include" nevű mappát, és rakd ebbe az include mappába az SDL és SDL_image csomagok header filejait` <br>
+3. `Hozz létre az "src" mappán belül egy "lib" nevű mappát, és rakd bele a következő könyvtárakat: SDL2.lib, SDLmain.lib, SDL_image.lib` <br>
+4. `A fő mappába rakd bele a következő dll-eket: SDL2.dll, SDL_image.dll, libpng16-16.dll` <br>
+5. `Nyiss meg egy terminált a fő mappában és írd be a következő kódot:`<br> 
 `g++ -Isrc/include -Lsrc/lib *.cpp -lSDL2main -lSDL2 -lSDL2_image -Wall -Wextra`
+6. `Futtasd az a.exe állományt!`
 
-# Setup Visual Studio 2022 
-1. Make a folder in local disk C:\ named as SDL.
-2. In C:\SDL folder make folders named as bin, include and lib.
-3. Extract the downloaded SDL2 folders and copy their x64 include content to the C:\SDL\include folder. Do the same thing with lib and bin folders (x64!!!). (If lib and bin files are in the same directory of the extracted SDL2 packs then sort them to the proper folds. )
-4. Open a terminal and write this command: subst T: C:\SDL
-5. Open Visual Studio 2022, make a project and open project settings.
-6. Set the top bar like this.
+# Visual Studio 2022 Beállítás 
+1. Hozz létre a C:\ meghajtódon egy SDL nevű mappát.
+2. Az így létrehozott SDL mappában hozzd létre az alábbi nevű mappákat: bin, include, lib.
+3. A letöltött SDL csomagokat csomagold ki és az include mappájukból másolj át mindent a c meghajtón található SDL nevű mappádnak az include mappájába. Tedd meg ugyan ezt a letöltött csomagok lib és bin filejaival. Fontos!!! x64-es mappából másolj át mindent. Lehet hogy a .dll és .lib fájlok ugyanabban a mappában vannak, ekkor a .lib a lib mappába és a .dll fileok a bin mappába fognak kerülni.
+4. Nyiss meg egy terminált és írd be ezt a kommandot: subst T: C:\SDL
+5. Töltsd le a teljes Visaul Studio 2022 Version mappát innen a githubomról és kattints rá az sln filera. Majd nyisd meg a project beállításokat.
+6. A beállításoknál a felső sornak így kell kinéznie.
 
 <div align="center">
   
@@ -77,7 +78,7 @@ Kis érdekességképpen egy dimenziós tömböket használtam kétdimenziós tö
 
 </div>
 
-11. Go back set this options like this and you are ready to go.
+11. Mentsd el a változásokat, majd zárd be és a futtatásnál állíts mindent úgy ahogy a képen van.
 
 <div align="center">
 
