@@ -3,7 +3,7 @@
 # A játékról
 A program c++ programozási nyelv alatt készült az SDL-t felhasználva.
 <br><br>
-A játék minden fontos metódust tartalmaz amit Conway meghatározott a szabályok között.
+A játék minden fontos metódust tartalmaz, amit Conway meghatározott a szabályok között.
 <br><br>
 Kis érdekességképpen egy dimenziós tömböket használtam kétdimenziós tömbök helyett, így matematikailag kellett visszafejtenem egy két esetben hogy mik az x,y koordináták.
 
@@ -14,8 +14,8 @@ Kis érdekességképpen egy dimenziós tömböket használtam kétdimenziós tö
 | ![kép](https://user-images.githubusercontent.com/60004480/184091854-e7634a14-cd57-43de-aee0-4dd6885e71ac.png)| A gomb lenyomásával szüneteltetni tudod a játékot. <br> Miközben a játék szüneteltetve van a gomb szürkére vált és nem lehet rákattintani amíg el nem indul újra a játék.  |
 |![kép](https://user-images.githubusercontent.com/60004480/184092193-9dbca68d-0657-4350-87a2-5cb6f434906b.png)| Ha végeztél a játékkal és ki akarsz lépni, akkor nyomd meg ezt a gombot és azonnal bezárul a játék.|
 |![kép](https://user-images.githubusercontent.com/60004480/184092305-a6ae37a3-01b6-45db-8868-773f92d9ab84.png)| Ha ezt a gombot megnyomod, akkor le fognak nyílni a játékbeállítási opciók, ahol testre tudod szabni tetszés szerint a játék kinézetét. |
-|![kép](https://user-images.githubusercontent.com/60004480/184092432-37dac152-af02-4a04-9618-25c4640d6554.png)| Itt beállíthatod a háttér színét. <br> Kattints rá a kiválaszott színre és a játék automatikusan frissíti magát és már az új beállítással élvezheted a játékot. |
-|![kép](https://user-images.githubusercontent.com/60004480/184092661-281db94b-5b09-4cad-9b39-c426e2daf797.png)| Az élő cellák színei is beállíthatóak itt. <br> Kattints rá a kiválaszott színre és a játék automatikusan frissíti magát és már az új beállítással élvezheted a játékot.|
+|![kép](https://user-images.githubusercontent.com/60004480/184092432-37dac152-af02-4a04-9618-25c4640d6554.png)| Itt beállíthatod a háttér színét. <br> Kattints rá a kiválasztott színre és a játék automatikusan frissíti magát és már az új beállítással élvezheted a játékot. |
+|![kép](https://user-images.githubusercontent.com/60004480/184092661-281db94b-5b09-4cad-9b39-c426e2daf797.png)| Az élő cellák színei is beállíthatóak itt. <br> Kattints rá a kiválasztott színre és a játék automatikusan frissíti magát és már az új beállítással élvezheted a játékot.|
 |![kép](https://user-images.githubusercontent.com/60004480/184092818-d2389c85-f07c-4f7b-8869-843031424a49.png)| Továbbá a játékpálya mérete is beállítható. <br> A jelenleg kiválasztott pályaméretet piros x-el jelöltem. |
 
 # Letöltés
@@ -34,9 +34,9 @@ Kis érdekességképpen egy dimenziós tömböket használtam kétdimenziós tö
 
 # Visual Studio 2022 Beállítás 
 1. Hozz létre a C:\ meghajtódon egy SDL nevű mappát.
-2. Az így létrehozott SDL mappában hozzd létre az alábbi nevű mappákat: bin, include, lib.
-3. A letöltött SDL csomagokat csomagold ki és az include mappájukból másolj át mindent a c meghajtón található SDL nevű mappádnak az include mappájába. Tedd meg ugyan ezt a letöltött csomagok lib és bin filejaival. Fontos!!! x64-es mappából másolj át mindent. Lehet hogy a .dll és .lib fájlok ugyanabban a mappában vannak, ekkor a .lib a lib mappába és a .dll fileok a bin mappába fognak kerülni.
-4. Nyiss meg egy terminált és írd be ezt a kommandot: subst T: C:\SDL
+2. Az így létrehozott SDL mappában hozd létre az alábbi nevű mappákat: bin, include, lib.
+3. A letöltött SDL csomagokat csomagold ki és az include mappájukból másolj át mindent a c meghajtón található SDL nevű mappádnak az include mappájába. Tedd meg ugyan ezt a letöltött csomagok lib és bin filejaival. Fontos!!! x64-es mappából másolj át mindent. Lehet, hogy a .dll és .lib fájlok ugyanabban a mappában vannak, ekkor a .lib a lib mappába és a .dll fileok a bin mappába fognak kerülni.
+4. Nyiss meg egy terminált és írd be ezt a commandot: subst T: C:\SDL
 5. Töltsd le a teljes Visaul Studio 2022 Version mappát innen a githubomról és kattints rá az sln filera. Majd nyisd meg a project beállításokat.
 6. A beállításoknál a felső sornak így kell kinéznie.
 
